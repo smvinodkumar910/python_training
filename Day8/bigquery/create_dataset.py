@@ -7,7 +7,7 @@ client = bigquery.Client("bamboo-bulwark-319114")
 # dataset_id = "{}.your_dataset".format(client.project)
 
 # Construct a full Dataset object to send to the API.
-dataset = bigquery.Dataset("bamboo-bulwark-319114.python_learning")
+dataset = bigquery.Dataset("bamboo-bulwark-319114.python_learning_demo")
 
 # TODO(developer): Specify the geographic location where the dataset should reside.
 dataset.location = "US"

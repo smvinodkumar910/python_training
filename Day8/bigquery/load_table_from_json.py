@@ -11,7 +11,7 @@ job_config = bigquery.LoadJobConfig(
         bigquery.SchemaField("name", "STRING"),
         bigquery.SchemaField("post_abbr", "STRING"),
     ],
-    source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+    source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON
 )
 uri = "gs://cloud-samples-data/bigquery/us-states/us-states.json"
 
