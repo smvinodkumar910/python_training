@@ -1,17 +1,12 @@
 
 
+#import Hellow_world as hw 
 import Hellow_world
 
-import re
-
-txt = "The rain in Spain"
-x = re.search("ai", txt)
-
-print(x.start())
-print(x.end())
-print(x)
-print(x.group())
-print(x.groups())
-print(x.groupdict)
 
 
+#print(person1)
+
+print(dir(Hellow_world))
+
+#print_something('test_value')
