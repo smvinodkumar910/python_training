@@ -7,8 +7,8 @@ client = bigquery.Client("mynewdevenv")
 #                  the tables you are listing.
 # dataset_id = 'your-project.your_dataset'
 
-tables = client.list_tables("mynewdevenv.dbt_madhavan")  # Make an API request.
+tables = client.list_tables("mynewdevenv.dbt_vmadhavan")  # Make an API request.
 
-print("Tables contained in '{}':".format("mynewdevenv.dbt_madhavan"))
+print("Tables contained in '{}':".format("mynewdevenv.dbt_vmadhavan"))
 for table in tables:
     print("{}.{}.{}".format(table.project, table.dataset_id, table.table_id))

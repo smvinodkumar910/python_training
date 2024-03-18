@@ -1,6 +1,6 @@
 from google.cloud import storage
 
-storage_client = storage.Client("bamboo-bulwark-319114")
+storage_client = storage.Client("mynewdevenv")
 
 bucket = storage_client.bucket("cit_project")
 

@@ -1,13 +1,13 @@
 from google.cloud import bigquery
 
 # Construct a BigQuery client object.
-client = bigquery.Client("bamboo-bulwark-319114")
+client = bigquery.Client("mynewdevenv")
 
 # TODO(developer): Set dataset_id to the ID of the dataset to create.
 # dataset_id = "{}.your_dataset".format(client.project)
 
 # Construct a full Dataset object to send to the API.
-dataset = bigquery.Dataset("bamboo-bulwark-319114.python_learning_demo")
+dataset = bigquery.Dataset("mynewdevenv.python_learning_demo")
 
 # TODO(developer): Specify the geographic location where the dataset should reside.
 dataset.location = "US"
