@@ -2,7 +2,7 @@
 from google.cloud import bigquery
 
 # Construct a BigQuery client object.
-client = bigquery.Client("bamboo-bulwark-319114")
+client = bigquery.Client("mynewdevenv")
 
 ## list all tables
 datasets = list(client.list_datasets())  # Make an API request.
