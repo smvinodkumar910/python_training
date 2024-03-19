@@ -3,7 +3,7 @@ from google.cloud import bigquery
 
 
 def query_stackoverflow():
-    project_id = "bamboo-bulwark-319114"
+    project_id = "mynewdevenv"
     client = bigquery.Client(project_id)
     query_job = client.query(
         """

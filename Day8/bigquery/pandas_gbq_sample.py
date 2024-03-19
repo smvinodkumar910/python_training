@@ -2,11 +2,11 @@ import pandas
 import pandas_gbq
 
 # TODO: Set project_id to your Google Cloud Platform project ID.
-project_id = "bamboo-bulwark-319114"
+project_id = "mynewdevenv"
 
 # TODO: Set table_id to the full destination table ID (including the
 #       dataset ID).
-table_id = 'python_learning.dataframe_tb'
+table_id = 'python_learning_demo.dataframe_tb'
 
 df = pandas.DataFrame(
     {
@@ -19,7 +19,7 @@ df = pandas.DataFrame(
     }
 )
 
-#pandas_gbq.to_gbq(df, table_id, project_id=project_id)
+pandas_gbq.to_gbq(df, table_id, project_id=project_id)
 
-bqdf = pandas_gbq.read_gbq(query_or_table="python_learning.us_states",project_id="bamboo-bulwark-319114")
-print(bqdf)
+#bqdf = pandas_gbq.read_gbq(query_or_table="python_learning_demo.us_states",project_id="mynewdevenv")
+#print(bqdf)

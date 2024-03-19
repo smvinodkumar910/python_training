@@ -24,7 +24,7 @@ def list_blobs():
     """Lists all the blobs in the bucket."""
     #bucket_name = "your-bucket-name"
 
-    storage_client = storage.Client("bamboo-bulwark-319114")
+    storage_client = storage.Client("mynewdevenv")
 
     #Get all buckets list
     #buckets = list(storage_client.list_buckets())
@@ -32,7 +32,7 @@ def list_blobs():
     #    print(a.Bucket)
 
     # Note: Client.list_blobs requires at least package version 1.17.0.
-    blobs = storage_client.list_blobs("cit_project")
+    blobs = storage_client.list_blobs("mynewdevenv-bucket")
 
     # Note: The call returns a response only when the iterator is consumed.
     for blob in blobs:
