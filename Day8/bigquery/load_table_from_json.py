@@ -4,7 +4,7 @@ from google.cloud import bigquery
 client = bigquery.Client()
 
 # TODO(developer): Set table_id to the ID of the table to create.
-table_id = "bamboo-bulwark-319114.python_learning.us_states_json"
+table_id = "mynewdevenv.python_learning_demo.us_states_json"
 
 job_config = bigquery.LoadJobConfig(
     schema=[

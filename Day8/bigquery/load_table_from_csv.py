@@ -4,7 +4,7 @@ from google.cloud import bigquery
 client = bigquery.Client()
 
 # TODO(developer): Set table_id to the ID of the table to create.
-table_id = "bamboo-bulwark-319114.python_learning_demo.us_states"
+table_id = "mynewdevenv.python_learning_demo.us_states"
 
 job_config = bigquery.LoadJobConfig(
     schema=[
@@ -16,7 +16,7 @@ job_config = bigquery.LoadJobConfig(
     source_format=bigquery.SourceFormat.CSV,    
 )
 
-uri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv"
+uri = "gs://mynewdevenv-bucket/sample/us-states.csv"
 
 load_job = client.load_table_from_uri(
     uri, table_id, job_config=job_config
