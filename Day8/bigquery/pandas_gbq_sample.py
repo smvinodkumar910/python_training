@@ -19,7 +19,7 @@ df = pandas.DataFrame(
     }
 )
 
-pandas_gbq.to_gbq(df, table_id, project_id=project_id)
+#pandas_gbq.to_gbq(df, table_id, project_id=project_id)
 
-#bqdf = pandas_gbq.read_gbq(query_or_table="python_learning_demo.us_states",project_id="mynewdevenv")
-#print(bqdf)
+bqdf = pandas_gbq.read_gbq(query_or_table="python_learning_demo.us_states",project_id="mynewdevenv")
+print(bqdf)
